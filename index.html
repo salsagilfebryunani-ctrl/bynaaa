@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>cacaa to ka piann</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- =================================
+         AUDIO
+    ================================== -->
+
+    <audio
+        id="bg-music"
+        preload="auto"
+    >
+
+        <source
+            src="assets/music/sal priadi.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- =================================
+         START SCREEN
+    ================================== -->
+
+    <section id="start-screen">
+
+        <div class="start-content">
+
+            <button
+                id="start-button"
+                aria-label="Mulai"
+                type="button"
+            >
+
+                <div class="ring-glow"></div>
+
+                <img
+                    src="assets/flowers/flower-ring.png"
+                    class="flower-ring"
+                    alt=""
+                >
+
+                <span class="start-text">
+                    liaatt nii project akuu
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FLOWER LOADER
+    ================================== -->
+
+    <main
+        id="flower-loader"
+        class="flower-loader-hidden"
+    >
+
+        <div id="flower-container"></div>
+
+
+        <!-- =================================
+             TEXT BEFORE FLOWERS FLY
+        ================================== -->
+
+        <div id="flower-message">
+
+            <p>
+                sebelum kita lanjut,<br>
+                setel musik duluu gasii . . 
+
+            <img
+                src="assets/gif/mewing.gif"
+                class="music-gif"
+                alt="mewing"
+            >
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- =================================
+         MUSIC + NOTE SECTION
+    ================================== -->
+
+    <section id="music-note-section">
+
+
+        <!-- =================================
+             MUSIC SCREEN
+        ================================== -->
+
+        <div id="music-screen">
+
+            <p class="music-intro">
+                akuu keingett kakaa kaloo dengerinn laguu inii HAHAHA 
+            </p>
+
+
+            <!-- =================================
+                 MUSIC CARD
+            ================================== -->
+
+            <div id="music-card">
+
+
+                <div class="music-cover">
+
+                    <img
+                        src="assets/music-cover/pian.jpeg"
+                        alt="Cover lagu"
+                    >
+
+                </div>
+
+
+                <div class="music-info">
+
+                    <h2>
+                        Besok kita pergi makan dulu
+                    </h2>
+
+                    <p class="music-artist">
+                        Sal Priadi
+                    </p>
+
+
+                    <div class="music-time">
+
+                        <span id="current-time">
+                            0:00
+                        </span>
+
+                        <span id="duration">
+                            0:00
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="music-progress"
+                        id="music-progress"
+                        type="button"
+                        aria-label="Progress lagu"
+                    >
+
+                        <span
+                            id="music-progress-bar"
+                        ></span>
+
+                    </button>
+
+
+                    <div class="music-controls">
+
+                        <button
+                            class="music-control"
+                            id="backward-button"
+                            type="button"
+                            aria-label="Mundur 10 detik"
+                        >
+                            ↶
+                        </button>
+
+
+                        <button
+                            id="music-play"
+                            class="music-play"
+                            type="button"
+                            aria-label="Play"
+                        >
+                            ▶
+                        </button>
+
+
+                        <button
+                            class="music-control"
+                            id="forward-button"
+                            type="button"
+                            aria-label="Maju 10 detik"
+                        >
+                            ↷
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 TRANSITION BUTTON
+            ================================== -->
+
+            <button
+                id="music-transition-button"
+                type="button"
+            >
+                lanjutkann.
+            </button>
+
+        </div>
+
+
+        <!-- =================================
+             MINI PLAYER
+        ================================== -->
+
+        <div id="mini-player">
+
+            <div class="mini-cover">
+
+                <img
+                    src="assets/music-cover/pian.jpeg"
+                    alt="ka pian"
+                >
+
+            </div>
+
+
+            <div class="mini-info">
+
+                <span>
+                    Besok kita pergi makan dulu
+                </span>
+
+                <small>
+                    Sal Priadi
+                </small>
+
+            </div>
+
+
+            <button
+                id="mini-play"
+                type="button"
+                aria-label="Play atau pause"
+            >
+                ▶
+            </button>
+
+        </div>
+
+
+        <!-- =================================
+             OPEN MESSAGE
+        ================================== -->
+
+        <div id="message-opening">
+
+            <button
+                id="open-message"
+                type="button"
+            >
+                BUKAAA YHH PESANNYAAA
+            </button>
+
+        </div>
+
+
+        <!-- =================================
+             NOTE SCREEN
+        ================================== -->
+
+        <div id="note-screen">
+
+            <div class="note-wrapper">
+
+                <div class="note-sheet">
+
+
+                    <!-- PAGE 1 -->
+
+                    <article
+                        class="note-page active"
+                        data-page="1"
+                    >
+
+                        <span class="note-number">
+                            01 / 05
+                        </span>
+
+                        <h2>
+                            haii ka pian
+                        </h2>
+
+                        <p>
+                            ini first time aku bikin kayaa giniii after asing . .
+                        </p>
+
+                        <p>
+                            akuu sekaliann belajarr hehehe, hows's ur day kak?
+                        </p>
+
+                        <p>
+                            maaff yaa kaloo akuu banyaa salahnyaa :c
+                        </p>
+
+                    </article>
+
+
+                    <!-- PAGE 2 -->
+
+                    <article
+                        class="note-page"
+                        data-page="2"
+                    >
+
+                        <span class="note-number">
+                            02 / 05
+                        </span>
+
+                        <h2>
+                            tentang Lagu ini
+                        </h2>
+
+                        <p>
+                            akuu tibaa tibaa keingett kakaa ajaa hehehe :v
+                        </p>
+
+                        <p>
+                            akuu kadangg kayaa setiap lewatt laguu inii, tiba tibaa keingett WKWK
+                        </p>
+
+                    </article>
+
+
+                    <!-- PAGE 3 -->
+
+                    <article
+                        class="note-page"
+                        data-page="3"
+                    >
+
+                        <span class="note-number">
+                            03 / 05
+                        </span>
+
+                        <h2>
+                            anyway,
+                        </h2>
+
+                        <p>
+                           dari semua hal yang mauu akuu bilang,
+                            yang paling utamaa tuh...
+                        </p>
+
+                        <p>
+                            i just want to wish that we both stay healthy, happy, and keep hanging out together for a really long time. may our days be filled with endless laughter, good moments, and beautiful memories.
+                              thank you for being such a wonderfull man and for always being a part of my life!
+                        </p>
+
+                    </article>
+
+                    <!-- PAGE 4 -->
+
+                    <article
+                        class="note-page"
+                        data-page="4"
+                    >
+
+                        <span class="note-number">
+                            04 / 05
+                        </span>
+
+                        <h2>
+                            kaa piaann
+                        </h2>
+
+                        <p>
+                           semangatt yaa kerjanyaaa, akuu tauu pastii kakaa capee && beraatt bgtttt . . 
+                        </p>
+
+                        <p>
+                            im heree kaa, always pround of u
+                        </p>
+
+                    </article>
+
+                    <!-- PAGE 5 -->
+
+                    <article
+                        class="note-page"
+                        data-page="5"
+                    >
+
+                        <span class="note-number">
+                            05 / 05
+                        </span>
+
+                        <h2>
+                            akhir darii pesan ini
+                        </h2>
+
+                        <p>
+                           teteepp semangaat iaa kerjanyaa :3
+                        </p>
+
+                        <p>
+                            jangaan sedii sedii yaa kkaaa, bahagiaa truss !!
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="note-navigation">
+
+                    <button
+                        id="prev-note"
+                        type="button"
+                    >
+                        ←
+                    </button>
+
+                    <span id="note-page-indicator">
+                        1 / 3
+                    </span>
+
+                    <button
+                        id="next-note"
+                        type="button"
+                    >
+                        selanjutnya →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
